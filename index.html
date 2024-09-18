@@ -4,25 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Mysite</title>
+    <title>Mysite test</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #87CEEB, #00BFFF); /* Gradient background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        nav {
+            background-color: #4CAF50; /* Green */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        p {
+            font-size: 1.5em;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+        a {
+            color: #FFD700; /* Gold color for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .fa {
+            margin-right: 10px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        ul, ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left; /* Align text to the left */
+            display: inline-block; /* Make the list inline-block to respect text-align */
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        li {
+            margin: 10px 0;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
-<body BGCOLOR="12B1DF">
+<body>
     <nav>
         <a href="https://halfanhossenhabib.github.io/mysite-tricks/">Trick Menu</a>
-        <a href="https://halfanhossenhabib.github.io/mysite-test/">Test website</a>
+        <a href="https://halfanhossenhabib.github.io/mysite-test">Test website</a>
     </nav>
-    
+
     <h1>Hey, I am <br> Halfan Hossen Habib</h1>
     
-    <p style="font-size:24px;">Welcome to my website</p>
-
-    <h2>About me</h2>
-    <p style="font-size:24px;">I am tech-enthusiastic but too lazy &#129301;</p>
+    <p>Welcome to my website</p>
     
-    <p style="font-size:24px;">Check out Network Chuck's <i style="font-size:22px; color:red" class="fa">&#xf16a;</i> <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0&ab_channel=NetworkChuck">Video</a> to create yours &#128521;</p>
+    <h2>About me</h2>
+    <p>I am tech-enthusiastic but a bit lazy</p>
+    
+    <p>Check out Network Chuck's <i class="fa fa-youtube-play" style="color:red"></i> <u> <a href="https://www.youtube.com/watch?v=EXfFBEuCAr0&ab_channel=NetworkChuck">Video</a> </u> to create yours &#128521;</p>
 
-    <h2>Check out my Instagram <i style="font-size:20px; color:red" class="fa">&#xf16d;</i> <a href="https://www.instagram.com/halfan_hossen_habib/">halfan_hossen_habib</a></h2>
-    <h2>Check out my Facebook <i style="font-size:20px; color:blue" class="fa">&#xf09a;</i> <a href="https://www.facebook.com/halfanhossenhabib">Halfan Hossen Habib</a></h2>
-    <h2 style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mail me at &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i style="font-size:18px; color:black" class="fa">&#xf0e0;</i> <a href="mailto:halfanhossenhabib02@gmail.com">halfanhossenhabib@gmail.com </a>&nbsp;&nbsp; </h2>
+    <h2>Check out my Instagram <i class="fa fa-instagram" style="color:red"></i> <em> <a href="https://www.instagram.com/halfan_hossen_habib/">halfan_hossen_habib</a> </em> </h2>
+    <h2>Check out my Facebook <i class="fa fa-facebook" style="color:blue"></i> <a href="https://www.facebook.com/halfanhossenhabib">Halfan Hossen Habib</a></h2>
+    <h2>Mail me at <i class="fa fa-envelope" style="color:black"></i> <a href="mailto:halfanhossenhabib02@gmail.com">halfanhossenhabib@gmail.com</a></h2>
+
+    <button class="button" onclick="displayMessage()">Click Me!</button>
+
+    <script>
+        function displayMessage() {
+            alert('You got hacked "\uD83D\uDE08" lol just a joke "\uD83D\uDE02"');
+        }
+    </script>
 </body>
 </html>
