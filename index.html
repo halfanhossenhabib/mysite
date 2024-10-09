@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halfan Hossen Habib - Tech Enthusiast</title>
+    <meta name="description" content="Welcome to the personal website of Halfan Hossen Habib, a tech enthusiast. Connect with me on social media and learn more about me.">
+    <meta name="keywords" content="Halfan Hossen Habib, Halfan Hossen, halfanhossenhabib, tech enthusiast, personal website, social media, contact">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Mysite test</title>
     <style>
         body {
             background: linear-gradient(to right, #87CEEB, #00BFFF); /* Gradient background */
@@ -27,9 +29,32 @@
             text-decoration: none;
             font-size: 1.2em;
             margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: left 0.3s;
+        }
+        nav a:hover::before {
+            left: 100%;
         }
         nav a:hover {
             text-decoration: underline;
+            transform: scale(1.05);
+            background-color: #45a049; /* Darker green */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
         h1 {
             font-size: 3em;
@@ -113,13 +138,13 @@
 </head>
 <body>
     <nav>
-        <a href="https://halfanhossenhabib.github.io/mysite-tricks/">Trick Menu</a>
+        <a href="https://halfanhossenhabib.github.io/mysite-tricks/">Tricks Menu</a>
         <a href="https://halfanhossenhabib.github.io/mysite-test">Test website</a>
     </nav>
 
     <h1>Hey, I am <br> Halfan Hossen Habib</h1>
     
-    <p>Welcome, thanks for visiting.</p>
+    <p>Welcome! Thanks for visiting.</p>
     
     <h2>About me</h2>
     <p>I am tech-enthusiastic but a bit lazy</p>
